@@ -6,7 +6,7 @@
 # Written By: Brian Konzman
 
 
-if [[ $# -ne 4 ]];
+if [[ $# -ne 1 ]];
 	then
 	echo ""
 	echo "This script will clone groups of repos from an organization using an identifier"
@@ -22,10 +22,10 @@ if [[ $# -ne 4 ]];
 	echo "note: To use ssh, you must set up an ssh key with github"
 	echo "You may find it useful to set up your shell to know your GitHub credentials for https"
 else
-	organization=$1
-	identifier=$2
-	githubUsername=$3
-	tag=$4
+	organization="NCAndTCS"
+	identifier=$1
+	githubUsername=$"CCannon94"
+	tag=$"https"
 
 	if [ "$tag" == "https" ];
 		then
